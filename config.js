@@ -22,8 +22,7 @@ var config = {
         verbose: true,
         strictSSL: true
       }
-    },
-    "GRANT": {url:"http://grant.jira.server/jira/browse/"}
+    }
   },
   search_cmd: "search",
   //Since search results can be verbose, you may not want to muddy the channel
