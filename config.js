@@ -1,3 +1,4 @@
+require('./lib/heroku');
 var slackbot = require('./lib/bot');
 
 var config = {
