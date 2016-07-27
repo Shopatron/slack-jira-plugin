@@ -24,9 +24,9 @@ var config = {
       }
     }
   },
-  search_cmd: "search",
+  search_cmd: "jirasearch",
   //Since search results can be verbose, you may not want to muddy the channel
-  search_output_chan: "C02U1L9KZ",//if the value is "this", then the current channel will be used, else the name of a channel
+  search_output_chan: "this",//if the value is "this", then the current channel will be used, else the name of a channel
   projects: ["PPA", "PPB", "PPC", "POR", "CARS", "PGS", "CL", "PCC", "DVOP", "BOT", "PGC"],
   post: true,
   verbose: true,
