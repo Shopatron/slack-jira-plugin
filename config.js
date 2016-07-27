@@ -6,17 +6,15 @@ var config = {
   issueDetailsToShow: {'fields.summary':1 , 'fields.assignee' : 1, 'fields.creator' : 0, 'fields.description': 0},
   showDetailsByDefault: true,//if true, you don't need the '+' to get details
   bot_name: "jira",//Provide the name to post under
-  token: 'XXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXXXXXX-XXXXXX', // https://api.slack.com/web
+  token: process.env.SLACK_TOKEN, // https://api.slack.com/web
   jira_urls: {
-    // DEFAULT NODE IS REQUIRED.
-    "DEFAULT": {url: "https://default.jira.server/browse/"},
     // These should match projects from the projects property where you want to use a configuration other than the default
-    "SOLR": {
-      url: "https://issues.apache.org/jira/browse/",
+    "DEFAULT": {
+      url: "https://" + process.env.JIRA_HOST + "/browse/",
       jira: {
-        user: 'username', // be sure to use the username, not the user email
-        password: 'password',
-        host: 'hostname',
+        user: process.env.JIRA_USERNAME, // be sure to use the username, not the user email
+        password: process.env.JIRA_PASSWORD,
+        host: process.env.JIRA_HOST,
         protocol: 'https',
         port: 443,
         version: '2',
@@ -29,7 +27,7 @@ var config = {
   search_cmd: "search",
   //Since search results can be verbose, you may not want to muddy the channel
   search_output_chan: "C02U1L9KZ",//if the value is "this", then the current channel will be used, else the name of a channel
-  projects: ["REPLACE", "ME", "WITH", "YOUR", "PROJECT", "NAMES", "GRANT", "SOLR"],
+  projects: ["PPA", "PPB", "PPC", "POR", "CARS", "PGS", "CL", "PCC", "DVOP", "BOT", "PGC"],
   post: true,
   verbose: true,
   custom_texts: {
