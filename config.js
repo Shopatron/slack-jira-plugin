@@ -31,7 +31,7 @@ var config = {
   post: true,
   verbose: true,
   custom_texts: {
-    messagePrefix: "Jira Issue: " //message you might like to prefix to JiraBot's post
+    messagePrefix: ":jira: " //message you might like to prefix to JiraBot's post
   },
   emoji: ":finderbot:", // be sure to upload your custom emoji in slack
   link_separator: ", ",// use \n if you want new lines
