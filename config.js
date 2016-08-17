@@ -16,8 +16,8 @@ var config = {
         user: process.env.JIRA_USERNAME, // be sure to use the username, not the user email
         password: process.env.JIRA_PASSWORD,
         host: process.env.JIRA_HOST,
-        protocol: 'https',
-        port: 443,
+        protocol: 'http',
+        port: 80,
         version: '2',
         verbose: true,
         strictSSL: true
