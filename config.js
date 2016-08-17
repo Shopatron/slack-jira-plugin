@@ -11,7 +11,7 @@ var config = {
   jira_urls: {
     // These should match projects from the projects property where you want to use a configuration other than the default
     "DEFAULT": {
-      url: "https://" + process.env.JIRA_HOST + "/browse/",
+      url: "http://" + process.env.JIRA_HOST + "/browse/",
       jira: {
         user: process.env.JIRA_USERNAME, // be sure to use the username, not the user email
         password: process.env.JIRA_PASSWORD,
